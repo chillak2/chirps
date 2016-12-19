@@ -1,0 +1,43 @@
+<template>
+    <!--<div class="col-lg-2 col-lg-offset-3" id="RegistrationForm">input-group marginTop">-->
+       <div innerhtml.bind="registerError"></div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" 
+            aria-describedby="emailHelp" placeholder="Enter email" value.bind="email & validate">
+        </div> 
+        <div class="form-group">
+            <label for="exampleInputScreenName">Screen name</label>
+            <input type="text" class="form-control" id="exampleInputScreenName" 
+		aria-describedby="firstNameHelp" placeholder="Enter Screenname"
+            	value.bind="screenName & validate">
+
+    
+        <div class="form-group">
+            <label for="exampleInputFirstName">First name</label>
+            <input type="text" class="form-control" id="exampleInputFirstName" 
+		aria-describedby="firstNameHelp" placeholder="Enter first name"
+            	value.bind="firstName & validate">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Last name</label>
+            <input type="text" class="form-control" id="exampleInputLastName" 
+            aria-describedby="lastNameHelp" placeholder="Enter last name" value.bind="lastName & validate">
+        </div>
+        <!--
+        <div class="form-group">
+            <label for="exampleInputMobileNumber">MobileNumber</label>
+            <input type="text" class="form-control" id="exampleMobileNumber" 
+		aria-describedby="MobileNumberHelp" placeholder="Enter MobileNumber"
+            	value.bind="MobileNumber & validate">
+        </div>-->
+
+        
+        <div class="form-group">
+            <label for="exampleInputPassword">Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword" 
+            aria-describedby="PasswordHelp" placeholder="Enter password" value.bind="password & validate">
+        </div>
+	<button click.delegate="save()" class="btn btn-primary">Submit</button>
+</form>
+</template>
